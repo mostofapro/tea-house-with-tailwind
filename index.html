@@ -9,27 +9,74 @@
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
+
   <!-- Header Area -->
-   <header class="">
-      <div class="flex justify-between items-center mx-auto w-5/6 mt-5">
+   <header class="container px-12 lg:px-20 mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center mt-10">
         <!-- Banner Content -->
-        <div>
+        <div class="ml-4 px-2 py-3">
           <h1 class="text-5xl font-bold mb-5 w-3/4">It's good tea time at The Tea House</h1>
-          <p class="text-gray-500 w-2/4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <p class="text-gray-500 w-3/4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
           <button class="px-3 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-md text-white font-bold cursor-pointer">Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i></button>
         </div>
-        <div>
-          <img src="images/banner.png" alt="">
+        <div class="relative">
           <div>
-
+            <img src="images/banner.png" alt="">
+          </div>
+          <div class="flex items-center gap-5 bg-white rounded-lg shadow-lg px-3 py-2 md:px-10 md:py-5 absolute top-27 md:top-40 md:left-12 lg:top-70 lg:left-15">
+            <i class="fa-solid fa-star text-orange-400 text-pink-200xl"></i>
+            <div class="">
+              <h4 class="text-2xl font-bold">5.00</h4>
+              <p class="text-slate-600">Trust Pilot Ratings</p>
+            </div>
           </div>
         </div>
       </div>
    </header>
   
    <!-- Main Area -->
-    <main>
+    <main class="container px-12 lg:px-20 mx-auto">
 
+      <!-- Featured Section -->
+       <section class="mt-10 text-center">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold">Our Featured Products</h2>
+          <p class="max-w-2xl mx-auto pb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+          <!-- Card 1 -->
+          <div class="rounded-lg shadow-md bg-gray-50 space-y-3">
+              <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+            <div class="space-y-3">
+              <h4 class="text-xl font-bold text-gray-700">Milk Tea</h4>
+              <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 space-y-3">
+              <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+            <div class="space-y-3">
+              <h4 class="text-xl font-bold text-gray-700">Milk Tea</h4>
+              <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 space-y-3">
+              <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+            <div class="space-y-3">
+              <h4 class="text-xl font-bold text-gray-700">Milk Tea</h4>
+              <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="rounded-lg shadow-md bg-gray-50 space-y-3">
+              <img class="mx-auto pt-4" src="images/tea-1.png" alt="">
+            <div class="space-y-3">
+              <h4 class="text-xl font-bold text-gray-700">Milk Tea</h4>
+              <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
 
     <!-- Footer Area -->
